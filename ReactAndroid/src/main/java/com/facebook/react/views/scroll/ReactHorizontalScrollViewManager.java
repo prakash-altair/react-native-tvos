@@ -77,7 +77,7 @@ public class ReactHorizontalScrollViewManager extends ViewGroupManager<ReactHori
   @ReactProp(name = "scrollEnabled", defaultBoolean = true)
   public void setScrollEnabled(ReactHorizontalScrollView view, boolean value) {
     view.setScrollEnabled(value);
-    view.setFocusable(value);
+    //view.setFocusable(value);
   }
 
   @ReactProp(name = "showsHorizontalScrollIndicator")
