@@ -314,15 +314,15 @@ public class ReactScrollView extends ScrollView
   }
 
   @Override
-  public boolean dispatchKeyEvent(KeyEvent event) {
+  public boolean executeKeyEvent(KeyEvent event) {
     int eventKeyCode = event.getKeyCode();
     if (!mScrollEnabled
         && (eventKeyCode == KeyEvent.KEYCODE_DPAD_UP
             || eventKeyCode == KeyEvent.KEYCODE_DPAD_DOWN)) {
-      FLog.w("ReactScrollView", " dispatchKeyEvent " + eventKeyCode);
+      FLog.w("ReactScrollView", " executeKeyEvent " + eventKeyCode);
       return false;
     }
-    return super.dispatchKeyEvent(event);
+    return super.executeKeyEvent(event);
   }
 
   @Override
