@@ -411,7 +411,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView
         && (eventKeyCode == KeyEvent.KEYCODE_DPAD_LEFT
             || eventKeyCode == KeyEvent.KEYCODE_DPAD_RIGHT)) {
       FLog.w("HReactScrollView", " dispatchKeyEvent " + eventKeyCode);
-      return true;
+      return false;
     }
     return super.dispatchKeyEvent(event);
   }

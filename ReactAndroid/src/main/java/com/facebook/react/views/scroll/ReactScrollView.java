@@ -320,7 +320,7 @@ public class ReactScrollView extends ScrollView
         && (eventKeyCode == KeyEvent.KEYCODE_DPAD_UP
             || eventKeyCode == KeyEvent.KEYCODE_DPAD_DOWN)) {
       FLog.w("ReactScrollView", " dispatchKeyEvent " + eventKeyCode);
-      return true;
+      return false;
     }
     return super.dispatchKeyEvent(event);
   }
