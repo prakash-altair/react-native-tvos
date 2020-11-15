@@ -234,13 +234,13 @@ public class ReactHorizontalScrollView extends HorizontalScrollView
    * scrolling to child without checking any layout dirty flag. This will fix focus navigation issue
    * for KeyEvents which are not handled in HorizontalScrollView, for example: KEYCODE_TAB.
    */
-  // @Override
-  // public void requestChildFocus(View child, View focused) {
-  //   if (focused != null && !mPagingEnabled) {
-  //     scrollToChild(focused);
-  //   }
-  //   super.requestChildFocus(child, focused);
-  // }
+  @Override
+  public void requestChildFocus(View child, View focused) {
+    if (focused != null && !mPagingEnabled) {
+      scrollToChild(focused);
+    }
+    super.requestChildFocus(child, focused);
+  }
 
   @Override
   public void addFocusables(ArrayList<View> views, int direction, int focusableMode) {

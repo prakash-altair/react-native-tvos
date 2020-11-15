@@ -226,13 +226,13 @@ public class ReactScrollView extends ScrollView
    * layout dirty flag. This will fix focus navigation issue for KeyEvents which are not handled by
    * ScrollView, for example: KEYCODE_TAB.
    */
-  // @Override
-  // public void requestChildFocus(View child, View focused) {
-  //   if (focused != null) {
-  //     scrollToChild(focused);
-  //   }
-  //   super.requestChildFocus(child, focused);
-  // }
+  @Override
+  public void requestChildFocus(View child, View focused) {
+    if (focused != null) {
+      scrollToChild(focused);
+    }
+    super.requestChildFocus(child, focused);
+  }
 
   private void scrollToChild(View child) {
     Rect tempRect = new Rect();
