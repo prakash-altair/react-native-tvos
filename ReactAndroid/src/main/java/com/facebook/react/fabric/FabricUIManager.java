@@ -94,7 +94,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener {
       ReactFeatureFlags.enableFabricLogs
           || PrinterHolder.getPrinter()
               .shouldDisplayLogMessage(ReactDebugOverlayTags.FABRIC_UI_MANAGER);
-  private static final int FRAME_TIME_MS = 16;
+  private static final int FRAME_TIME_MS = 12;
   private static final int MAX_TIME_IN_FRAME_FOR_NON_BATCHED_OPERATIONS_MS = 8;
   private static final int PRE_MOUNT_ITEMS_INITIAL_SIZE_ARRAY = 250;
 

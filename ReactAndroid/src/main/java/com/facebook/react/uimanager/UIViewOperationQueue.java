@@ -1060,7 +1060,7 @@ public class UIViewOperationQueue {
    */
   private class DispatchUIFrameCallback extends GuardedFrameCallback {
 
-    private static final int FRAME_TIME_MS = 16;
+    private static final int FRAME_TIME_MS = 12;
     private final int mMinTimeLeftInFrameForNonBatchedOperationMs;
 
     private DispatchUIFrameCallback(

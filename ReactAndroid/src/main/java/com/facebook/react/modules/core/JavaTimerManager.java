@@ -35,7 +35,7 @@ public class JavaTimerManager {
   // The total duration of a frame in milliseconds, this assumes that devices run at 60 fps.
   // TODO: Lower frame duration on devices that are too slow to run consistently
   // at 60 fps.
-  private static final float FRAME_DURATION_MS = 1000.f / 60.f;
+  private static final float FRAME_DURATION_MS = 8;//1000.f / 60.f;
 
   private static class Timer {
     private final int mCallbackID;
