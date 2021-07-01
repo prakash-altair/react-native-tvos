@@ -41,7 +41,7 @@ export type JSTimerType =
 
 // These timing constants should be kept in sync with the ones in native ios and
 // android `RCTTiming` module.
-const FRAME_DURATION = 1000 / 60;
+const FRAME_DURATION = 1000 / 30;
 const IDLE_CALLBACK_FRAME_DEADLINE = 1;
 
 const MAX_TIMER_DURATION_MS = 60 * 1000;
